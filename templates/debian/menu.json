@@ -1,0 +1,26 @@
+{
+    "deboldstab": {
+        "kernel": "${debcdn}/oldstable/${debnetloc}/linux",
+        "kernelargs": "${debargs}",
+        "initrd": "${debcdn}/oldstable/${debnetloc}/initrd.gz",
+        "description": "Debian (old stable)"
+    },
+    "debstab": {
+        "kernel": "${debcdn}/stable/${debnetloc}/linux",
+        "kernelargs": "${debargs}",
+        "initrd": "${debcdn}/stable/${debnetloc}/initrd.gz",
+        "description": "Debian (stable)"
+    },
+    "debtesting": {
+        "kernel": "${debcdn}/testing/${debnetloc}/linux",
+        "kernelargs": "${debargs}",
+        "initrd": "${debcdn}/testing/${debnetloc}/initrd.gz",
+        "description": "Debian (testing)"
+    },
+    "debunstab": {
+        "kernel": "${debcdn}/unstable/${debnetloc}/linux",
+        "kernelargs": "${debargs}",
+        "initrd": "${debcdn}/unstable/${debnetloc}/initrd.gz",
+        "description": "Debian (unstable)"
+    }
+}

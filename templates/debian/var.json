@@ -1,0 +1,5 @@
+{
+    "debcdn": "http://cdn.debian.net/debian/dists/",
+    "debnetloc": "main/installer-amd64/current/images/netboot/debian-installer/amd64",
+    "debargs": "tasks=standard preseed/url=http://{{host}}/debian.preseed preseed/url/checksum=6d5a1503b107b9c8c3a462790e991cdd"
+}

@@ -1,0 +1,28 @@
+#!ipxe
+
+:top
+menu (__(__) Choose an installer (__)__)
+item --gap All installers are 64bit. Unless otherwise noted.
+
+{% for item in ctx.menu %}
+item {{ item.label }} {{ item.description }}
+{% endfor %}
+
+choose installer && goto ${installer}
+
+{% for key,val in ctx.variables %}
+set {{ key }} {{ val }}
+{% endif %}
+
+{% for item in ctx.menu %}
+:{{ item.label }}
+{% if item.kernel is defined %} kernel {{ item.kernel }} {% if item.kernel is defined %} {{ item.kernelargs }} {% endif %}{% endif %} 
+{% if item.initrd is defined %} initrd {{ item.initrd }} {% endif %}
+goto done
+{% endfor %}
+
+:done
+echo "Thanks for using Ubooty!"
+sleep 2
+boot
+
