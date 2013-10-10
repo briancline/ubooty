@@ -20,12 +20,12 @@ Most users won't need these, but they are good for GRUB/Syslinux and existing DH
 
 ### USB
 
-Linux: ```sudo dd if=ubooty.usb of=/dev/sdX```
+Linux: ```sudo dd if=ubooty.usb of=/dev/sdX```  
 Windows: Use [Winimager](http://sourceforge.net/projects/win32diskimager/)
 
 ### ISO
 
-Linux: Use k3b or cdrecord
+Linux: Use k3b or cdrecord  
 Windows: Use [CD Burner XP](http://cdburnerxp.se/en/home) or something that can burn ISO Files
 
 ### Linux kernel (advanced)
@@ -62,6 +62,6 @@ Appliances such as [OpenELEC](http://openelec.tv) are designed to be installed a
 Sofware used in the making of this project.  Thanks to them for making awesome software!
 
 * [iPXE](http://ipxe.org)
-* [Syslinux](syslinux.zytor.com)
+* [Syslinux](http://syslinux.zytor.com)
 * [Fabric](http://fabfile.org/)
 
